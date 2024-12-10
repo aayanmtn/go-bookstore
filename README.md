@@ -1,0 +1,9 @@
+The provided codebase context is for a Go-based web application that provides an API for managing books in a bookstore. The pkg directory contains the source code for the application, and the cmd directory contains the executable file for running the application.
+
+Here's a breakdown of the files and directories in the provided codebase context:
+
+pkg/controller: This directory contains the Go source code for the controller functions that handle HTTP requests and responses. The GetAllBooks, GetBookByID, CreateBook, UpdateBook, and DeleteBook functions are defined in this package.
+pkg/model: This directory contains the Go source code for the model definitions, which define the data structures used by the application. In this case, there is only one model definition: Book.
+pkg/routes: This directory contains the Go source code for the route handlers that map HTTP requests to controller functions. The RegisterBookStoreRouter function is defined in this package and registers routes for the book store API.
+cmd/bookstore-api: This directory contains the executable file for running the application. The main.go file defines the entry point for the application, which initializes the router and starts the server.
+The project uses the Gorilla Mux library to handle HTTP requests and responses, and the GORM library to interact with a PostgreSQL database. The pkg/controller package contains the controller functions that handle HTTP requests and responses, while the pkg/model package defines the data structures used by the application. The pkg/routes package contains the route handlers that map HTTP requests to controller functions. Finally, the cmd/bookstore-api directory contains the executable file for running the application.
